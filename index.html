@@ -13,10 +13,7 @@
     <div class="timer">
         <div class="timer__header">
             <div class="timer__title">
-                Timer
-            </div>
-            <div class="timer__text">
-                time left
+                Countdown timer
             </div>
         </div>
         <div class="timer__clock">
@@ -38,15 +35,24 @@
         </div>
         </div>
         <div class="timer__settings">
-            <div class="timer__text">
-                Set time
+            <div class="timer__text" id="counterText">
+                Set the time
             </div>
-            <select name="hours" id="hours" class="timer__hours">
-            </select>
-            <select name="minutes" id="minutes" class="timer__minutes">
-            </select>
-            <select name="seconds" id="seconds" class="timer__seconds">
-            </select>
+            <div class="timer__settingsContainer">
+            <ul name="hours" id="hours" class="timer__setTime timer__hours">
+            </ul>
+            <ul name="minutes" id="minutes" class="timer__setTime timer__minutes">
+            </ul>
+            <ul name="seconds" id="seconds" class="timer__setTime timer__seconds">
+            </ul>
+        </div>
+        <div class="timer__tip" id="counterText">
+            scroll to set the time
+        </div>
+        </div>
+        <div class="timer__alert">
+            <span class="timer__alertText"></span>
+            <button class="timer__alertClose">OK!</button>
         </div>
     </div>
 </body>
